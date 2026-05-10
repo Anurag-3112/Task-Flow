@@ -1,4 +1,4 @@
-const API = "http://localhost:5000";
+const API = "https://task-flow-79qo.onrender.com/";
 
 const form = document.getElementById("todoForm");
 const input = document.getElementById("taskInput");
