@@ -20,17 +20,25 @@
 ✅ Persistent task storage with MongoDB  
 ✅ Responsive and modern UI  
 ✅ Fast and lightweight performance  
+✅ MVC backend architecture  
 
 ---
 
 # Screenshots
 
+### Task Flow
 <p align="center">
-  <img src="assets/screenshot1.png" width="700" alt="Task Flow Screenshot 1"/>
+  <img src="assets/screenshots/image1.png" width="100%" alt="Task Flow Screenshot 1"/>
 </p>
 
+### List
 <p align="center">
-  <img src="assets/screenshot2.png" width="700" alt="Task Flow Screenshot 2"/>
+  <img src="assets/screenshots/image2.png" width="100%" alt="Task Flow Screenshot 2"/>
+</p>
+
+### Delete
+<p align="center">
+  <img src="assets/screenshots/image3.png" width="100%" alt="Task Flow Screenshot 2"/>
 </p>
 
 ---
@@ -60,6 +68,15 @@
 
 # Getting Started
 
+### Environment Variables
+
+Create a `.env` file inside `server/`
+
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/todoDB
+```
+
 ### 1️. Clone the Repository
 
 ```bash
@@ -70,13 +87,14 @@ git clone https://github.com/Anurag-3112/task-flow.git
 ### 2️. Navigate to the Project Folder
 
 ```bash
-cd tak-flow
+cd task-flow
 ```
 
 
 ### 3️. Install Dependencies
 
 ```bash
+cd server
 npm install
 ```
 
@@ -97,7 +115,7 @@ node server.js
 Server runs on:
 
 ```bash
-http://localhost:3000
+http://localhost:5000
 ```
 
 
@@ -129,21 +147,35 @@ or use **Live Server** in VS Code.
 
 ```bash
 task-flow/
-│── backend/
-│   ├── server.js
-│   ├── models/
-│   └── routes/
 │
-│── frontend/
+├── client/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-│── assets/
-│   ├── iamge1.png
-│   └── image2.png
+├── server/
+│   ├── server.js
+│   ├── .env
+│   ├── package.json
+│   │
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │   └── todoController.js
+│   │
+│   ├── middleware/
+│   │   └── errorHandler.js
+│   │
+│   ├── models/
+│   │   └── Todo.js
+│   │
+│   └── routes/
+│       └── todoRoutes.js
 │
-│── package.json
+└── assets/
+    ├── image1.png
+    └── image2.png
 ```
 
 ---
