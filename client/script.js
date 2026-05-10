@@ -97,7 +97,7 @@ async function loadTodos() {
 
     const deleteBtn = document.createElement("button");
     deleteBtn.className = "delete-btn";
-    deleteBtn.innerHTML ='<img src="../assets/icons/delete.png" alt="Delete" class="delete-icon">';
+    deleteBtn.innerHTML ='<img src="./assets/icons/delete.png" alt="Delete" class="delete-icon">';
 
     deleteBtn.addEventListener("click", () => {
       deleteTodo(todo._id);
