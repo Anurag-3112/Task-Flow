@@ -11,6 +11,14 @@
 
 ---
 
+# Live Demo
+
+[![Frontend](https://img.shields.io/badge/Frontend-Live-success?style=for-the-badge&logo=vercel)](https://your-frontend-link.vercel.app)
+
+[![Backend](https://img.shields.io/badge/Backend-API-blue?style=for-the-badge&logo=render)](https://your-backend-link.onrender.com)
+
+---
+
 # Features
 
 ✅ Add new tasks  
